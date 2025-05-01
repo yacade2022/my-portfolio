@@ -33,6 +33,8 @@ const Skills = () => {
               <ul className='mt-2  text-slate-800 text-center'>
                 <li>NodeJs</li>
                 <li>ExpressJs</li>
+                <li>NextJs</li>
+                <li>TypeScript</li>
                 <li>MongoDb</li>
                 <li>Restful APIs</li>               
               </ul>

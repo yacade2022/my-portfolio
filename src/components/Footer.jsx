@@ -12,8 +12,8 @@ const Footer = () => {
             </div>
             <div>
                    <h2 className=' text-2xl mb-2  font-bold text-slate-100'>Contact</h2>
-                   <p>Email: amyac824@gmail.com</p>
-                   <p>Phone: +213 549032254</p>
+                   <p>Email: alilimohammedelamin@gmail.com</p>
+                   <p>Phone: +1 613-668-5187</p>
             </div>
             <div>
                <h2 className=' text-2xl mb-2 font-bold text-slate-100'>Services</h2>
