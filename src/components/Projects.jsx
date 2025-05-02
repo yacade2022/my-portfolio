@@ -118,15 +118,12 @@ const Projects = () => {
             <div data-aos="fade-down" className=' bg-slate-100 rounded-lg border-1 shad'>
                 <div className="relative">
                     <img className='h-40 w-full rounded-t-lg' src={collection} />
-                    <div className="absolute top-0 right-0 bg-yellow-500 text-white py-1 px-2 rounded-bl-lg font-semibold">
-                        Work in Progress
-                    </div>
                 </div>
                 <div>
                     <h2 className=' mx-auto px-2 capitalize font-bold text-xl'>collection photo</h2>
                     <p className='mx-auto px-2 mt-4 text-slate-700 leading-loose  '>Tech used : Html, Styled-Components, Javascript, React, NodeJs, Express, MongoDb, Render</p>
                     <div className='mx-auto px-2 py-3'>
-                        <a className=' text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://collection-photo.onrender.com' target="_blank">See Live</a>
+                        <a className=' text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://collection-photo-1.onrender.com' target="_blank">See Live</a>
                         <a className=' text-slate-100 bg-fuchsia-700 p-1 rounded-md' href='https://github.com/yacade2022/Collection-Photo' target="_blank">Source Code</a>
                     </div>
                 </div>
