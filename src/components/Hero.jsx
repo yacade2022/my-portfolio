@@ -18,7 +18,7 @@ const Hero = () => {
                 <p className='max-sm:max-w-60 text-slate-100 font-semibold py-2'>I'm Junior Full Stack Web Developer based in Ottawa,Canada</p>
                 <div className='flex items-center gap-x-4 mt-3'>
                     <a href='https://github.com/yacade2022' target='_blank'><FaGithubSquare className='h-8 w-8 text-slate-100 hover:text-fuchsia-700 duration-300' /></a>
-                    <a href='https://linkedin.com/in/amine-alili-5842312b0' target='_blank'><FaLinkedin className='h-8 w-8 text-slate-100 hover:text-fuchsia-700 duration-300' /></a>
+                    <a href='https://www.linkedin.com/in/el-amin-mohammed-alili-851356304' target='_blank'><FaLinkedin className='h-8 w-8 text-slate-100 hover:text-fuchsia-700 duration-300' /></a>
                     <Link spy={true} smooth={true} to='Projects' className='text-slate-800 bg-slate-100 px-1 rounded-md hover:bg-fuchsia-700 duration-300' href="#projects">My Projects</Link>
                 </div>
            </div>
