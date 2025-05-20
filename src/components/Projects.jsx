@@ -131,7 +131,7 @@ const Projects = () => {
         <h2 className='mx-auto px-2 capitalize font-bold text-xl'>airbnb</h2>
         <p className='mx-auto px-2 mt-4 text-slate-700 leading-loose'>Tech used : Html, TailwindCss, TypeScript, React, NextJs</p>
         <div className='mx-auto px-2 py-3'>
-            <a className='text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://mern-employee-management.onrender.com' target="_blank">See Live</a>
+            <a className='text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://github.com/yacade2022/airbnb' target="_blank">See Live</a>
             <a className='text-slate-100 bg-fuchsia-700 p-1 rounded-md' href='https://github.com/yacade2022/airbnb' target="_blank">Source Code</a>
         </div>
     </div>
