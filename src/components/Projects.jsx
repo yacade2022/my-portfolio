@@ -92,14 +92,52 @@ import dashboard from '../assets/image/dashboard.jpg'
 import weather from '../assets/image/weather-app.jpg'
 import order from '../assets/image/order.jpg'
 import shopping from '../assets/image/shopping-cart.jpg'
+import airbnb from '../assets/image/airbnb_logo_detail.jpg'
+
 
 const Projects = () => {
   return (
     <div id="Projects" className="align-element py-20  ">
          <h2 data-aos="fade-down" className=" text-4xl font-bold text-center pb-10 text-fuchsia-700 ">My Projects</h2>
-
+        
+        
         <div className='py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-10'>
-            <div data-aos="fade-right" className=' bg-slate-100 rounded-lg border-1 shad'>
+            {/* <div data-aos="fade-right" className=' bg-slate-100 rounded-lg border-1 shad'>
+                <div className="relative">
+                    <img className='h-40 w-full rounded-t-lg' src={airbnb} />
+                    
+                </div>
+                <div>
+                    <h2 className=' mx-auto px-2 capitalize font-bold text-xl'>airbnb</h2>
+                    <p className='mx-auto px-2 mt-4 text-slate-700 leading-loose  '>Tech used : Html, TailwindCss, TypeScript, React,NextJs</p>
+                    <div className='mx-auto px-2 py-3'>
+                        <a className=' text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://mern-employee-management.onrender.com' target="_blank">See Live</a>
+                        <a className=' text-slate-100  bg-fuchsia-700 p-1 rounded-md' href='https://github.com/yacade2022/airbnb' target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div> */}
+            <div data-aos="fade-right" className='bg-slate-100 rounded-lg border-1 shad'>
+    <div className="relative">
+        <img className='h-40 w-full rounded-t-lg' src={airbnb} />
+        
+        {/* Work in Progress Overlay - Add this code */}
+        <div className="absolute inset-0 backdrop-blur-sm bg-black/40 flex flex-col items-center justify-center rounded-t-lg">
+            <div className="bg-fuchsia-700 text-white px-3 py-1 rounded-md font-semibold rotate-6">
+                Work in Progress
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 className='mx-auto px-2 capitalize font-bold text-xl'>airbnb</h2>
+        <p className='mx-auto px-2 mt-4 text-slate-700 leading-loose'>Tech used : Html, TailwindCss, TypeScript, React, NextJs</p>
+        <div className='mx-auto px-2 py-3'>
+            <a className='text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://mern-employee-management.onrender.com' target="_blank">See Live</a>
+            <a className='text-slate-100 bg-fuchsia-700 p-1 rounded-md' href='https://github.com/yacade2022/airbnb' target="_blank">Source Code</a>
+        </div>
+    </div>
+</div>
+            
+            <div data-aos="fade-down" className=' bg-slate-100 rounded-lg border-1 shad'>
                 <div className="relative">
                     <img className='h-40 w-full rounded-t-lg' src={employee} />
                     
@@ -113,7 +151,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-down" className=' bg-slate-100 rounded-lg border-1 shad'>
+            <div data-aos="fade-left" className=' bg-slate-100 rounded-lg border-1 shad'>
                 <div className="relative">
                     <img className='h-40 w-full rounded-t-lg' src={collection} />
                 </div>
@@ -126,7 +164,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-left" className=' bg-slate-100 rounded-lg border-1 shad'>
+            <div data-aos="fade-right" className=' bg-slate-100 rounded-lg border-1 shad'>
                 <img className=' h-40 w-full rounded-t-lg' src={dashboard}  />
                 <div>
                     <h2 className=' mx-auto px-2 capitalize font-bold text-xl'>dashboard</h2>
@@ -137,7 +175,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right" className=' bg-slate-100 rounded-lg border-1 shad'>
+            <div data-aos="fade-up" className=' bg-slate-100 rounded-lg border-1 shad'>
                 <img className=' h-40 w-full rounded-t-lg' src={weather}  />
                 <div>
                     <h2 className=' mx-auto px-2 capitalize font-bold text-xl'>weather app</h2>
@@ -148,7 +186,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" className=' bg-slate-100 rounded-lg border-1 shad'>
+            <div data-aos="fade-left" className=' bg-slate-100 rounded-lg border-1 shad'>
                 <img className=' h-40 w-full rounded-t-lg' src={order}  />
                 <div>
                     <h2 className=' mx-auto px-2 capitalize font-bold text-xl'>order app</h2>
