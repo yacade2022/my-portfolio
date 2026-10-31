@@ -120,18 +120,13 @@ const Projects = () => {
     <div className="relative">
         <img className='h-40 w-full rounded-t-lg' src={airbnb} />
         
-        {/* Work in Progress Overlay - Add this code */}
-        <div className="absolute inset-0 backdrop-blur-sm bg-black/40 flex flex-col items-center justify-center rounded-t-lg">
-            <div className="bg-fuchsia-700 text-white px-3 py-1 rounded-md font-semibold rotate-6">
-                Work in Progress
-            </div>
-        </div>
+        
     </div>
     <div>
         <h2 className='mx-auto px-2 capitalize font-bold text-xl'>airbnb</h2>
         <p className='mx-auto px-2 mt-4 text-slate-700 leading-loose'>Tech used : Html, TailwindCss, TypeScript, React, NextJs</p>
         <div className='mx-auto px-2 py-3'>
-            <a className='text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://github.com/yacade2022/airbnb' target="_blank">See Live</a>
+            <a className='text-slate-100 bg-fuchsia-700 p-1 mr-4 rounded-md' href='https://airbnb-po1q.onrender.com' target="_blank">See Live</a>
             <a className='text-slate-100 bg-fuchsia-700 p-1 rounded-md' href='https://github.com/yacade2022/airbnb' target="_blank">Source Code</a>
         </div>
     </div>
