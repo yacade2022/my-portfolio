@@ -1,63 +1,35 @@
-import React from 'react'
-import {FaHtml5} from 'react-icons/fa'
-import { TbDeviceImacCode } from "react-icons/tb";
-import { IoIosConstruct } from "react-icons/io";
-
-
+import { skills } from '../data'
+import SectionHeading from './SectionHeading'
 
 const Skills = () => {
   return (
-    <div id="Skills" className="align-element py-20  ">
-      <h2 data-aos="fade-down" className=" text-4xl font-bold text-center pb-10 text-fuchsia-700 ">My Skills</h2>
-      <div className=' py-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
-        <div data-aos="fade-down" className=' bg-slate-100 rounded-md p-2 text-center border-1 shad   '>
-              <div className='  text-fuchsia-700'>
-                 <FaHtml5 className='h-16 w-16 inline-block text-center ' />
-                 <h4 className='mt-6 text-2xl font-bold'>Front End</h4>
-              </div>
-              <ul className='mt-2  text-slate-800  '>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Javascript</li>
-                <li>React js</li>
-                <li>Redux-Toolkit</li>
-                <li>Styled Components</li>
-                <li>TailwindCss</li>                
-              </ul>
-        </div>
-        <div data-aos="fade-up" className=' bg-slate-100 rounded-md p-2 text-center border-1 shad   '>
-              <div className=' text-fuchsia-700  '>
-                 <TbDeviceImacCode className='h-16 w-16 inline-block text-center ' />
-                 <h4 className='mt-6 text-2xl font-bold'>Back End</h4>
-              </div>
-              <ul className='mt-2  text-slate-800 text-center'>
-                <li>NodeJs</li>
-                <li>ExpressJs</li>
-                <li>NextJs</li>
-                <li>TypeScript</li>
-                <li>MongoDb</li>
-                <li>Restful APIs</li>               
-              </ul>
-        </div>
-        <div data-aos="fade-down" className='bg-slate-100 rounded-md p-2 border-1 shad '>
-              <div className=' text-center  text-fuchsia-700 '>
-                 <IoIosConstruct className='h-16 w-16 inline-block text-center' />
-                 <h4 className='mt-6 text-2xl font-bold '>Other Tech</h4>
-              </div>
-              <ul className='mt-2  text-slate-800 text-center'>
-                <li>Git</li>
-                <li>Github</li>
-                <li>Vs Code</li>
-                <li>Render</li>
-                              
-              </ul>
-        </div>
-
+    <section id="skills" className="align-element py-24">
+      <SectionHeading eyebrow="02 / skills" title="My Skills" />
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {skills.map(({ id, title, icon: Icon, items }, i) => (
+          <article
+            key={id}
+            data-aos="fade-up"
+            data-aos-delay={i * 100}
+            className="card p-6 transition hover:-translate-y-1 hover:border-fuchsia-500/50"
+          >
+            <div className="flex items-center gap-4">
+              <span className="grid h-12 w-12 place-items-center rounded-xl bg-fuchsia-500/10 text-fuchsia-400">
+                <Icon className="h-6 w-6" aria-hidden="true" />
+              </span>
+              <h3 className="font-display text-xl font-semibold text-slate-50">{title}</h3>
+            </div>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {items.map((item) => (
+                <li key={item} className="chip">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
-        
-     
-    </div>
-
+    </section>
   )
 }
 

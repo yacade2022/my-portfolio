@@ -1,38 +1,35 @@
-import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { socials } from '../data'
 
 const Footer = () => {
   return (
-    <footer className="  text-white pt-8">
-      <div className='align-element'>
-        <div className=' grid text-center lg:grid-cols-3 gap-4'>
-            <div>
-              <h2 className=' text-2xl mb-2  font-bold text-slate-100'>AmineWeb<span className=' text-fuchsia-700'>Dev</span></h2>
-               <p>Building comprehensive solutions from front-end to back-end excellence</p>
-            </div>
-            <div>
-                   <h2 className=' text-2xl mb-2  font-bold text-slate-100'>Contact</h2>
-                   <p>Email: alili.elamin@gmail.com</p>
-                   <p>Phone: +1 613-668-5187</p>
-            </div>
-            <div>
-               <h2 className=' text-2xl mb-2 font-bold text-slate-100'>Services</h2>
-                 <p>Web Design</p>
-                 <p>Web Development</p>
-                 <p>SEO</p>
-
-            </div>
-
+    <footer className="border-t border-slate-800">
+      <div className="align-element flex flex-col items-center justify-between gap-6 py-10 sm:flex-row">
+        <div className="text-center sm:text-left">
+          <p className="font-display text-lg font-bold text-slate-50">
+            AmineWeb<span className="text-fuchsia-400">Dev</span>
+          </p>
+          <p className="mt-1 text-sm text-slate-500">
+            &copy; {new Date().getFullYear()} Amine. Designed and developed by Amine.
+          </p>
         </div>
-        
-
-      </div>
-
-      <div className="mt-8 text-slate-300 font-semibold text-center bg-fuchsia-700 p-6">
-        <p>&copy; 2024 All rights reserved. | Designed and developed by Amine</p>
+        <ul className="flex items-center gap-2">
+          {socials.map(({ id, label, href, icon: Icon }) => (
+            <li key={id}>
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={label}
+                className="block rounded-md p-2 text-slate-400 transition hover:text-fuchsia-400"
+              >
+                <Icon className="h-5 w-5" />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
